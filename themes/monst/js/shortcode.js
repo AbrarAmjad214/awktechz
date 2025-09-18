@@ -1,0 +1,1 @@
+(()=>{"use strict";$((function(){$("body").on("click",".shortcode-description-type-tab",(function(e){$("#shortcode-description-type-simple-tab").is(":visible")?$("input[name=description_type][value='block']").prop("checked",!0):$("input[name=description_type][value='simple']").prop("checked",!0)}))}))})();
