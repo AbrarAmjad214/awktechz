@@ -278,3 +278,9 @@
 .cards .shadow{
     background-color: #e5f7fc;
 }
+h1.text-2xl, .inline-flex{
+    color: #fff !important;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
