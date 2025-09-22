@@ -280,131 +280,153 @@
             <!--Mobile menu-->
             <div id="mobile-menu" class="hidden navbar-menu relative z-50 transition duration-300">
                 <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
-                    <nav class="bg-transparent flex justify-between items-center py-3">
-                        <a class="text-3xl font-semibold leading-none logo-main" href="">
-                            <img class="h-10" src="../storage/awkt-logo.jpg" alt="" />
+                <nav
+                    class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition duration-300">
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-semibold leading-none" href="#">
+                            <img class="h-10" src="../storage/awkt-logo.jpg" alt="logo" />
                         </a>
-                        <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-                            <li class="pt-4 pb-4    current-menu-item ">
-                                <a href="https://awktechz.vercel.app/" class="text-sm font-semibold  hover:text-blueGray-500"
-                                    style="color: rgb(71, 85, 105)">
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blue-500"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul class="mobile-menu">
+                            <li class="mb-1 rounded-xl ">
+                                <a href=""
+                                    class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                     Home
                                 </a>
                             </li>
-                            <li class="pt-4 pb-4  group relative has-child   ">
-                                <a href="../blog.html" class="text-sm font-semibold  hover:text-blueGray-500"
-                                    style="color: rgb(71, 85, 105)">
+                            <li class="mb-1 rounded-xl  menu-item-has-children ">
+                                <a href="blog.html"
+                                    class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                     Company
                                 </a>
-                                <ul class="drop-down-menu min-w-200">
-                                    <li class="  ">
-                                        <a href="../about-us.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                <ul class="dropdown pl-5">
+                                    <li class="mb-1 rounded-xl ">
+                                        <a href="about-us.html"
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             About Us
                                         </a>
                                     </li>
-                                    <li class="  ">
-                                        <a href="../why-choose-us.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                    <li class="mb-1 rounded-xl ">
+                                        <a href="why-choose-us.html"
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             Why Choose Us
                                         </a>
                                     </li>
-                                    <li class="  ">
-                                        <a href="../team.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                    <li class="mb-1 rounded-xl ">
+                                        <a href="team.html"
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             Team
                                         </a>
                                     </li>
-                                    <li class="  ">
-                                        <a href="../portfolio.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                    <li class="mb-1 rounded-xl ">
+                                        <a href="portfolio.html"
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             Portfolio
                                         </a>
                                     </li>
-                                    <li class="  ">
-                                        <a href="../pricing.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                    <li class="mb-1 rounded-xl ">
+                                        <a href="pricing.html"
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             Pricing
                                         </a>
                                     </li>
-                                    <li class="  ">
-                                        <a href="../galleries.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                    <li class="mb-1 rounded-xl ">
+                                        <a href="galleries.html"
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             Galleries
                                         </a>
                                     </li>
-                                    <li class="  ">
+                                    <li class="mb-1 rounded-xl ">
                                         <a href="404.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             404
                                         </a>
                                     </li>
                                 </ul>
 
                             </li>
-                            <li class="pt-4 pb-4  group relative has-child   ">
-                                <a href="../services.html" class="text-sm font-semibold  hover:text-blueGray-500"
-                                    style="color: rgb(71, 85, 105)">
+                            <li class="mb-1 rounded-xl  menu-item-has-children ">
+                                <a href="../services.html"
+                                    class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                     Services
                                 </a>
-                                <ul class="drop-down-menu min-w-200">
-                                    <li class="  ">
+                                <ul class="dropdown pl-5">
+                                    <li class="mb-1 rounded-xl ">
                                         <a href="digital-marketing-services.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             Digital Marketing Services
                                         </a>
                                     </li>
-                                    <li class="  ">
-                                        <a href="web-hosting.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
-                                            Web Hosting
-                                        </a>
-                                    </li>
-                                    <li class="  ">
+                                    <li class="mb-1 rounded-xl ">
                                         <a href="graphic-design.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             Graphic Design
                                         </a>
                                     </li>
-                                    <li class="  ">
+                                    <li class="mb-1 rounded-xl ">
+                                        <a href="web-hosting.html"
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
+                                            Web Hosting
+                                        </a>
+                                    </li>
+                                    <li class="mb-1 rounded-xl ">
                                         <a href="web.html"
-                                            class=" menu-sub-item  text-sm text-blueGray-600 hover:text-blueGray-500">
+                                            class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                             web Development
                                         </a>
                                     </li>
                                 </ul>
 
                             </li>
-                            
-                            <li class="pt-4 pb-4   ">
-                                <a href="../contact.html" class="text-sm font-semibold  hover:text-blueGray-500"
-                                    style="color: rgb(71, 85, 105)">
+                            <li class="mb-1 rounded-xl ">
+                                <a href="contact.html"
+                                    class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
                                     Contact
                                 </a>
                             </li>
                         </ul>
 
 
-                        <div class="hidden lg:block">
+                        <div class="mt-4 pt-6 border-t border-blueGray-100">
                             <div class="language d-inline-block font-small ">
 
                             </div>
+                        </div>
+                    </div>
 
-                            <a class="" href=""></a>
-                            <a class="" href=""></a>
+                    <div class="mt-auto">
+                        <p class="my-4 text-xs text-blueGray-400">
+                            <span>Get in Touch</span>
+                            <a class="text-blue-500 hover:text-blue-500 underline" href="#">info@awktechz.com</a>
+                        </p>
+
+                        <div class="-mx-2 mt-4">
+                            <a class="inline-block px-2 text-blue-500" href="https://www.facebook.com/awktechz/">
+                                <span class="ti-facebook"></span>
+                            </a>
+                            <a class="inline-block px-2 text-blue-500" href="https://www.twitter.com/awktechz/">
+                                <span class="ti-twitter"></span>
+                            </a>
+                            <a class="inline-block px-2 text-blue-500" href="https://www.instagram.com/awktechz/">
+                                <span class="ti-instagram"></span>
+                            </a>
+                            <a class="inline-block px-2 text-blue-500"
+                                href="https://www.linkedin.com/company/awktechz/?viewAsMember=true">
+                                <span class="ti-linkedin"></span>
+                            </a>
                         </div>
 
-                        <div class="lg:hidden">
-                            <button
-                                class="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
-                                <svg class="fill-current h-4 w-4" viewbox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <title>Mobile menu</title>
-                                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </nav>
+                    </div>
+                </nav>
             </div>
 
 
