@@ -367,3 +367,12 @@ form button[type="submit"]:hover {
 .bg-white.shadow-lg.rounded-xl.p-8{
     background-color: #e5f7fc !important;
 }
+@media (max-width:767px) {
+    .row {
+        display: block !important
+    }
+    .col-lg-4 {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
