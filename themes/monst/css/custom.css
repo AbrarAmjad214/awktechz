@@ -273,10 +273,10 @@
     width: 50%;
 }
 .bg-blueGray-50, .bg-blueGray-100{
-    background-color: #e5f7fc !important;
+    background-color: #1B3E42 !important;
 }
 .cards .shadow{
-    background-color: #e5f7fc;
+    background-color: #1B3E42;
 }
 h1.text-2xl, .inline-flex{
     color: #fff !important;
@@ -365,7 +365,7 @@ form button[type="submit"]:hover {
     width: 25%;
 }
 .bg-white.shadow-lg.rounded-xl.p-8{
-    background-color: #e5f7fc !important;
+    background-color: #1B3E42 !important;
 }
 @media (max-width:767px) {
     .row {
@@ -375,4 +375,66 @@ form button[type="submit"]:hover {
         width: 100%;
         margin: 20px 0;
     }
+}
+h2.text-4xl.mt-5.font-bold.font-heading.leading-tight, h2.text-3xl.md\:text-4xl.font-bold.font-heading.wow.animate__.animate__fadeInDown.animated {
+    color: #fff;
+}
+p.mt-4.mb-6.text-blueGray-500.leading-relaxed {
+    color: #fff !important;
+}
+p.text-blueGray-400.leading-loose.wow.animate__.animate__fadeInUp.animated{
+    color: #fff !important;
+}
+h3.text-lg.font-semibold , .md\:text-4xl{
+    color: #fff !important;
+}
+.text-blueGray-500{
+    color: #ffffffcb !important;
+}
+a.text-lg.text-blueGray-400.hover\:text-blueGray-500{
+    color: #fff !important;
+}
+h5.mb-6.text-lg.font-bold.font-heading , .w-6{
+    color: #fff !important;
+}
+/* .text-blue-500{
+    color: #262E36 !important;
+} */
+ .bg-blue-500,
+ .bg-blue-400{
+    background-color: #262E36 !important;
+ }
+ h2.max-w-lg.mx-auto.mb-4.text-4xl.font-bold.font-heading.wow.animate__.animate__fadeInUp.animated{
+    color: #fff !important;
+ }
+ section.relative.footer-2.border-t.border-gray-100{
+    background-color: #262E36 !important;
+ }
+ .h-10{
+    height: 110px !important;
+ }
+ .relative.flex.flex-wrap.-mx-4{
+  position: relative;
+  overflow: hidden;
+}
+
+/* watermark overlay across entire footer (including right colored area) */
+.relative.flex.flex-wrap.-mx-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../../storage/awk-footer.png') center center no-repeat;
+  background-size: cover;
+  opacity: 0.08; /* adjust for faintness */
+  z-index: 2; /* put watermark above background color */
+  pointer-events: none;
+}
+
+/* keep all footer text and links visible above watermark */
+.relative.flex.flex-wrap.-mx-4 > * {
+  position: relative;
+  z-index: 3;
 }
