@@ -340,7 +340,7 @@ form textarea:focus {
 form .grid label {
   font-size: 14px;
   font-weight: 500;
-  color: #555;
+  color: #fdfdfd !important;
 }
 form input[type="checkbox"] {
   accent-color: #2563eb; /* Tailwind blue-600 */
@@ -389,7 +389,7 @@ h3.text-lg.font-semibold , .md\:text-4xl{
     color: #fff !important;
 }
 .text-blueGray-500{
-    color: #ffffffcb !important;
+    color: #ffffff !important;
 }
 a.text-lg.text-blueGray-400.hover\:text-blueGray-500{
     color: #fff !important;
@@ -426,7 +426,7 @@ h5.mb-6.text-lg.font-bold.font-heading , .w-6{
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../../storage/awk-footer.png') center center no-repeat;
+  background: url('../../../storage/watermark.png') center center no-repeat;
   background-size: cover;
   opacity: 0.08; /* adjust for faintness */
   z-index: 2; /* put watermark above background color */
@@ -437,4 +437,28 @@ h5.mb-6.text-lg.font-bold.font-heading , .w-6{
 .relative.flex.flex-wrap.-mx-4 > * {
   position: relative;
   z-index: 3;
+}
+h2.text-4xl.font-bold.mb-6{
+    color: #fff !important;
+}
+/* .text-4xl , .text-xl{
+    color: #fff !important;
+} */
+.text-xl, p.text-blueGray-500{
+    text-align: left;
+}
+h2.text-4xl.font-bold.mb-12{
+    color: #1B3E42 !important;
+}
+form{
+    background-color: #ffffff2e;
+}
+a.inline-block.px-2.text-blue-500{
+    color: #ffffff !important;
+}
+.text-black{
+    color: #000 !important;
+}
+.col-lg-3{
+    width: 25% !important;
 }
