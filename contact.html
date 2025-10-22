@@ -434,7 +434,7 @@
                             <div class="flex flex-wrap items-center -mx-3">
                                 <div class="w-full lg:w-1/2 px-3">
                                     <div class="py-12">
-                                        <div class="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
+                                        <div class="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-left lg:text-left">
                                             <h2
                                                 class="text-3xl lg:text-4xl mb-4 font-bold font-heading wow animate__animatedanimated animate__fadeIn">
                                                 Get In Touch
@@ -467,7 +467,7 @@
                                                 href="#experts" target="_blank"> Our experts
                                             </a>
 
-                                            <a class="block hover-up-2 sm:inline-block py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded wow animate__animatedanimated animate__fadeInUp"
+                                            <a class="block hover-up-2 sm:inline-block py-4 px-8 text-xs  hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded wow animate__animatedanimated animate__fadeInUp"
                                                 data-wow-delay=".3s" target="_blank" href="#how-we-work">How it work?
                                             </a>
                                         </div>
@@ -500,56 +500,42 @@
 
                                 <div>
                                     <form action="contact/send" method="post" class="contact-form generic-form">
-                                        <input type="hidden" name="_token"
-                                            value="jYc1j4JVt1IX2h6P4SLSed2S3npoWABGonZg4X8A" autocomplete="off">
-                                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp"
+                                        <input type="hidden" name="_token" value="jYc1j4JVt1IX2h6P4SLSed2S3npoWABGonZg4X8A"
+                                            autocomplete="off">
+                                        <div class="flex flex-wrap mb-4 -mx-3 wow animate__animated animate__fadeInUp animated"
                                             data-wow-delay=".3s">
-                                            <input name="subject"
-                                                class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                                                type="text" placeholder="Subject" />
-                                        </div>
-                                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                                            data-wow-delay=".3s">
-                                            <input name="name"
-                                                class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                                                type="text" placeholder="Name" />
-                                        </div>
-                                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                                            data-wow-delay=".3s">
-                                            <input name="phone"
-                                                class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                                                type="text" placeholder="Phone" />
-                                        </div>
-                                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                                            data-wow-delay=".3s">
-                                            <input name="email"
-                                                class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                                                type="email" placeholder="name@example.com" />
-                                        </div>
-                                        <div class="mb-4 wow animate__animatedanimated animate__fadeInUp"
-                                            data-wow-delay=".3s">
-                                            <textarea name="content"
-                                                class="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
-                                                placeholder="Message..."></textarea>
-                                        </div>
+                                            <div class="w-full lg:w-1/2 px-3 mb-4 lg:mb-0">
+                                                <div class="mb-4">
+                                                    <input name="subject"
+                                                        class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                                        type="text" placeholder="Subject" />
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input name="name"
+                                                        class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                                        type="text" placeholder="Name" />
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input name="email"
+                                                        class="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                                                        type="email" placeholder="name@example.com" />
+                                                </div>
 
-
-                                        <div class="contact-form-group">
-                                            <div class="contact-message contact-success-message" style="display: none">
                                             </div>
-                                            <div class="contact-message contact-error-message" style="display: none">
+                                            <div class="w-full lg:w-1/2 px-3">
+                                                <textarea name="content"
+                                                    class="w-full h-full p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
+                                                    placeholder="Message..."></textarea>
                                             </div>
-                                        </div>
 
-                                        <div class="flex justify-between items-center wow animate__animatedanimated animate__fadeInUp"
-                                            data-wow-delay=".3s">
+                                        </div>
+                                        <div class="flex justify-between items-center">
                                             <label>
                                                 <input class="mr-1" type="checkbox" name="terms" value="1" />
-                                                <span class="text-sm font-semibold">I agree to terms and
-                                                    conditions.</span>
+                                                <span class="text-sm font-semibold">I agree to terms and conditions.</span>
                                             </label>
                                             <button
-                                                class="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
+                                                class="py-4 px-8 text-sm text-white font-semibold leading-none bg-blueGray-50 hover:bg-blue-500 rounded"
                                                 type="submit">Send message
                                             </button>
                                         </div>
