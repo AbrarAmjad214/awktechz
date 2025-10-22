@@ -413,6 +413,11 @@ h5.mb-6.text-lg.font-bold.font-heading , .w-6{
  .h-10{
     height: 110px !important;
  }
+ @media(max-width: 768px){
+    .h-10{
+    height: 80px !important;
+    }
+ }
  .relative.flex.flex-wrap.-mx-4{
   position: relative;
   overflow: hidden;
