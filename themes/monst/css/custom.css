@@ -273,10 +273,10 @@
     width: 50%;
 }
 .bg-blueGray-50, .bg-blueGray-100{
-    background-color: #1B3E42 !important;
+    background-color: #262E36 !important;
 }
 .cards .shadow{
-    background-color: #1B3E42;
+    background-color: #262E36;
 }
 h1.text-2xl, .inline-flex{
     color: #fff !important;
@@ -365,7 +365,7 @@ form button[type="submit"]:hover {
     width: 25%;
 }
 .bg-white.shadow-lg.rounded-xl.p-8{
-    background-color: #1B3E42 !important;
+    background-color: #262E36 !important;
 }
 @media (max-width:767px) {
     .row {
@@ -453,7 +453,7 @@ h2.text-4xl.font-bold.mb-6{
     text-align: left;
 }
 h2.text-4xl.font-bold.mb-12{
-    color: #1B3E42 !important;
+    color: #262E36 !important;
 }
 form{
     background-color: #ffffff2e;
@@ -469,4 +469,87 @@ a.inline-block.px-2.text-blue-500{
 }
 form.contact-form.generic-form{
     background-color: #262E36;
+}
+/* Only activate dropdown on small screens */
+@media (max-width: 991px) {
+  .footer-dropdown {
+    display: none;
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+
+  .footer-dropdown-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-dropdown-btn span {
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-dropdown-btn.active span {
+    transform: rotate(45deg);
+  }
+
+  .footer-dropdown a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 0;
+  }
+
+  .footer-dropdown a:hover {
+    color: #007bff;
+  }
+}
+ul.footer-dropdown{
+    color: #ffffff !important;
+}
+button.footer-toggle{
+    color: #ffffff !important;
+}
+.footer-section a{
+    color: #fff;
+}
+
+@media(max-width: 768px){
+    .footer-right{
+    padding-top: 40px !important;
+    }
+    .footer-section{
+        border: 1px solid #d8d6d6de;
+        padding: 10px;
+        text-align: center;
+    }
+}
+button.py-4.px-8.text-sm.text-white.font-semibold.leading-none.hover\:bg-white.rounded {
+    background-color: #fff;
+    color: #000 !important;
+}
+@media(max-width: 768px){
+    button.py-4.px-8.text-sm.text-white.font-semibold.leading-none.hover\:bg-white.rounded {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.hover\:bg-blue-500:hover{
+    background-color: #ffffff !important;
+    color: #000 !important;
+    border: 0.5px solid #000 !important;
+}
+.cards{
+    border-radius: 20px !important;
 }
