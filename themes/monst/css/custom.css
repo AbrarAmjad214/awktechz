@@ -449,9 +449,7 @@ h2.text-4xl.font-bold.mb-6{
 /* .text-4xl , .text-xl{
     color: #fff !important;
 } */
-.text-xl, p.text-blueGray-500{
-    text-align: left;
-}
+
 h2.text-4xl.font-bold.mb-12{
     color: #262E36 !important;
 }
@@ -552,4 +550,7 @@ button.py-4.px-8.text-sm.text-white.font-semibold.leading-none.hover\:bg-white.r
 }
 .cards{
     border-radius: 20px !important;
+}
+.text-blueGray-400{
+    color: #fff !important;
 }
