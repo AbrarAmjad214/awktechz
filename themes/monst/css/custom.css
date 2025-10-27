@@ -554,3 +554,8 @@ button.py-4.px-8.text-sm.text-white.font-semibold.leading-none.hover\:bg-white.r
 .text-blueGray-400{
     color: #fff !important;
 }
+@media(max-width: 768px){
+    .col-lg-6.mb-12.footer-section{
+        margin-bottom: 10px !important;
+    }
+}
