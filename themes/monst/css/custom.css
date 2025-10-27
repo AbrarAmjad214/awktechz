@@ -528,7 +528,7 @@ button.footer-toggle{
     padding-top: 40px !important;
     }
     .footer-section{
-        border: 1px solid #d8d6d6de;
+        border: rgba(226, 232, 240, var(--tw-border-opacity)) !important;
         padding: 10px;
         text-align: center;
     }

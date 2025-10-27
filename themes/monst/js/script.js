@@ -9,3 +9,22 @@
                         menu.classList.contains('hidden') ? '▼' : '▲';
                 });
             });
+
+            document.querySelectorAll(".faq-btn").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector("svg");
+
+                // Toggle current
+                content.classList.toggle("hidden");
+                icon.classList.toggle("rotate-180");
+
+                // Close others
+                document.querySelectorAll(".faq-content").forEach((other) => {
+                    if (other !== content) {
+                    other.classList.add("hidden");
+                    other.previousElementSibling.querySelector("svg").classList.remove("rotate-180");
+                    }
+                });
+                });
+            });
