@@ -576,3 +576,42 @@ button.py-4.px-8.text-sm.text-white.font-semibold.leading-none.hover\:bg-white.r
 .navbar-burger{
     margin-left: 10px;
 }
+.d-flex{
+    display: flex;
+}
+@media(max-width: 768px){
+    .pt-16{
+        padding-top: 10px !important;
+    }
+    .py-20{
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .px-4{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .p-8{
+        padding: 10px !important;
+    }
+    .md-mb-5{
+        margin-bottom: 25px !important;
+    }
+    img.h-48.mx-auto{
+        height: 100% !important;
+    }
+    
+}
+@media(max-width: 465px){
+    .container{
+        padding: 0 15px;
+    }
+}
+.bg-gray{
+ background-color: #F8FAFC;
+}
+@media(max-width: 365px){
+    a.tracking-wide.hover-up-2.inline-block.py-4.px-8.sm\:mb-0.sm\:mr-3.text-xs.text-white.text-center.font-semibold.leading-none.bg-blue-400.hover\:bg-blue-500.rounded.wow.animate__.animate__fadeInUp.animated{
+        padding: 13px !important;
+    }
+}
